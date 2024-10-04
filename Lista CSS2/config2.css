@@ -24,11 +24,21 @@
 #perfil>hr{
     position: relative;
     width: 428px;
-     
+    color: white;     
 }
 #informa{    
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
     padding: 50px;
     
+}
+#ano{
+    position: sticky;
+    left: 85%;
+    font-size: medium;
+    color: rgb(100, 100, 100);
+}
+#list{
+    position: relative;
+    left: 1.2%;
 }
