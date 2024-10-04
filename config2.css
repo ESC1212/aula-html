@@ -1,0 +1,35 @@
+*{margin:0px;padding:0px}
+#perfil{
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    width: 400px;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    vertical-align: top;
+}
+#perfilimg{
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+}
+#topicoP{
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
+#perfil>hr{
+    position: relative;
+    width: 428px;
+     
+}
+#informa{
+    display: inline-block;
+    padding: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#informa>h1{
+    
+}
