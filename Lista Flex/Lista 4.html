@@ -4,42 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista 4</title>
-    <style>
-        .bbox{
-            display: flex;
-            height: 100vh;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-
-        }
-        .box{
-            display: flex;
-            border: 1px solid black;
-            width: 100px;
-            transition-duration: 2s;
-            height: 90vh;
-            border-radius: 50px;
-            text-align: center;
-            color: white;
-        }
-        .box:hover{
-            flex-grow: 1;
-            color: black;
-        }
-        .est{
-            display: flex;
-            
-        }
-    </style>
+    <link rel="stylesheet" href="config.css">
 </head>
-<body>
+<body style="background-color: antiquewhite;">
     <div class="bbox">
-        <div class="box"><img src="https://static.todamateria.com.br/upload/ou/to/outono-og.jpg?class=ogImageRectangle" alt=""></div>
-        <div class="box">box2</div>
-        <div class="box">box3</div>
-        <div class="box">box4</div>
-        <div class="box">box5</div>
+        <div class="box" id="opa1">
+            <div class="est" id="box">
+                <img id="opa" src="https://cdn-icons-png.freepik.com/512/187/187229.png" alt=""> 
+                <div class="estT"><p>Outono</p><p>Mar 20 - Jun 20</p></div>
+            </div>
+        </div>
+        <div class="box" id="opa2">
+            <div class="est" id="box">
+                <img id="opa" src="https://cdn.iconscout.com/icon/free/png-256/free-winter-icon-download-in-svg-png-gif-file-formats--snow-cold-xmas-snowflake-landscape-pack-nature-icons-3645798.png?f=webp&w=256" alt=""> 
+                <div class="estT"><p>Inverno</p><p>Mar 20 - Jun 20</p></div>
+            </div>
+        </div>
+        <div class="box" id="opa3">
+            <div class="est" id="box">
+                <img id="opa" src="https://cdn-icons-png.flaticon.com/512/2663/2663731.png" alt=""> 
+                <div class="estT"><p>Primavera</p><p>Mar 20 - Jun 20</p></div>
+            </div>
+        </div>
+        <div class="box" id="opa4">
+            <div class="est" id="box">
+                <img id="opa" src="https://cdn-icons-png.flaticon.com/512/2272/2272229.png" alt=""> 
+                <div class="estT"><p>Verão</p><p>Mar 20 - Jun 20</p></div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
