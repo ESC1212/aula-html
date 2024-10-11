@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 4</title>
+    <style>
+        .bbox{
+            display: flex;
+            height: 100vh;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        .box{
+            border: 1px solid black;
+            width: 100px;
+            transition-duration: 2s;
+            height: 90vh;
+        }
+        .box:hover{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="bbox">
+        <div class="box"><img src="https://www.megacps.com.br/wp-content/uploads/2019/11/outono4.jpg" alt=""></div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+    </div>
+</body>
+</html>
