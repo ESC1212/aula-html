@@ -1,0 +1,38 @@
+.mainbox{
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas: 
+        "A A . B" 
+        "C D D D"
+        "C D D D"
+        "C D D D" 
+    ;
+}
+.secondbox{
+    display: grid;
+    background-color: gray;
+    grid-template-areas: 
+        "E F F G" 
+        "M I I J"
+    ;
+    border-radius: 10px;
+    margin: 10px;
+}
+.boxx{
+    background-color: gray;
+    margin: 10px;
+    border: 1px solid black;
+    font-size: larger;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+.boxi{
+    background-color: lightgray;
+    margin: 20px;
+    border: 1px solid black;
+    font-size: larger;
+    text-align: center;
+    border-radius: 10px;
+    
+}

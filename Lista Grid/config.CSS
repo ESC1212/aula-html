@@ -1,0 +1,17 @@
+.mainbox{
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas: 
+        "header header header header" 
+        "nav    cont   cont   cont  "
+        "nav    cont   cont   cont  "
+        "nav    cont   cont   cont  " 
+        "nav    footer footer footer"
+    ;
+}
+.boxx{
+    background-color: lightgray;
+    border: 1px solid black;
+    font-size: larger;
+    text-align: center;
+}

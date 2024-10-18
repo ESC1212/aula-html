@@ -1,0 +1,39 @@
+.mainbox{
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas: 
+        "header header header header header header" 
+        "header header header header header header" 
+        "left   banner banner banner banner right "
+        "left   main   main   main   main   right "
+        "left   main   main   main   main   right "
+        "left   main   main   main   main   right "
+        "left   main   main   main   main   right "
+        "left   main   main   main   main   right "
+        "left   main   main   main   main   right "
+        "left   main   main   main   main   right "
+        "left   main   main   main   main   right "
+        "left   low    low    low    low    right " 
+        "footer footer footer footer footer footer"
+    ;
+}
+@media (max-width:700px){
+    .mainbox{
+        display: flex;
+        flex-direction: column;
+    }
+    #box{
+        background-color: gray;
+        margin: 1px;
+        font-size: larger;
+        text-align: center;
+        color: white;
+    }
+}
+#boxx{
+    background-color: gray;
+    margin: 5px;
+    font-size: larger;
+    text-align: center;
+    color: white;
+}
