@@ -22,12 +22,13 @@
         display: flex;
         flex-direction: column;
     }
-    #box{
+    #boxx{
         background-color: gray;
         margin: 1px;
         font-size: larger;
         text-align: center;
         color: white;
+        flex-grow: 1;
     }
 }
 #boxx{
