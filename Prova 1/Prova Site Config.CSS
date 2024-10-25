@@ -1,0 +1,141 @@
+*{
+    margin: 0px
+}
+
+.mainbox{
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas: 
+        "header header header header header header" 
+        "header header header header header header" 
+        "left   banner banner banner banner banner"
+        "left   main   main   main   main   main  "
+        "left   main   main   main   main   main  "
+        "left   main   main   main   main   main  "
+        "left   main   main   main   main   main  "
+        "left   main   main   main   main   main  "
+        "left   main   main   main   main   main  "
+        "left   main   main   main   main   main  "
+        "left   main   main   main   main   main  "
+        "left   low    low    low    low    low   " 
+        "footer footer footer footer footer footer"
+    ;
+}
+#boxx{
+    border: 1px solid black;
+    text-align: center;
+}
+#main{
+    background-image: url(https://as1.ftcdn.net/v2/jpg/03/76/35/10/1000_F_376351097_u62oBKOFDNkNkuOpN8XHg3RAqzFY1pjm.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1600px;
+}
+#add{
+    text-align: center;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE7ldqFLGevzWM5DnR047qLJJiv9A0SlL0yg&s);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: 30%;
+    border: 1px solid black;
+}
+#addd{
+    text-align: center;
+    background-image: url(https://www.adsoftheworld.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBL3RMQWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--940a070d3ff8d248df55b4851caa12e527469239/thumbnail_27920);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: 30%;
+    border: 1px solid black;
+}
+.comidasD{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(255, 156, 156);
+    height: 100%;
+}
+h1{
+    text-align: center;
+}
+.chat{
+    display: inline-block;
+    position: fixed;
+    right: 0%;
+    bottom: 0%;
+    height: 16px;
+    width: 400px;
+    border: 1px solid black;
+    background-color: antiquewhite;
+    transition-duration: 2s;
+}
+.content{
+    display: grid;
+    
+    grid-template-areas:
+    "Name Name Name  Name "
+    ".    .    .     .    "
+    ".    .    text1 text1"
+    ".    .    text1 text1"
+    ".    .    .     .    "
+    ".    .    text2 text2"
+    ".    .    text2 text2"
+    ".    .    .     .    "
+    "bottom bottom bottom bottom"
+    ;
+    height: 100%;
+}
+.Name{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    text-align: center;
+}
+.Text{
+    border: 1px solid black;
+    text-align: center; 
+    border-radius: 5px;
+    background-color: white;
+}
+.Bottom{
+    border: 1px solid black;
+    text-align: center;
+}
+.ball{
+    background-color: black;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    align-self: center;
+}
+.digi{
+    border: 1px solid black;
+    background-color: white;
+    height: 50px;
+}
+.chat:hover{
+    height: 600px;
+}
+@media (max-width:700px){
+    .mainbox{
+        display: flex;
+        flex-direction: column;
+    }
+    #add{
+        background-size: 100px;
+        background-position: 0%;
+    }
+    #addd{
+        background-size: 100px;
+        background-position: 0%;
+    }
+    h1{
+        text-align: center;
+    }
+    .Bottom{
+        border: 1px solid black;
+        text-align: center;
+        height: 300px;
+        margin-bottom: 5px;
+    }
+}

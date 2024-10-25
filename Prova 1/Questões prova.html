@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questões</title>
+    <link rel="stylesheet" href="prova.CSS">
+    <style>
+        #A{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>1. Explique o que ocorre em um acesso a uma página na web, descreva todas etapas e protocolos envolvidos até a carga completa do site.</h3>
+        <p>Para acessar uma pagina na web, primeiramente, o usuário inicia a comunicação com o servidor  solicitando os arquivos necessário para carregar a página. depois, o servidor "responde" o usuário com os arquivos solicidados.</p>
+        <h3>2. Leia a frase e comente com completude e coerência.</h3>
+        <h4>“ HTML é uma linguagem de programação de uso geral, assim como CSS, java e javascript.”</h4>
+        <p>Html CSS e java não são a mesma coisa <br> html é uma linguagem feita para mandar arquivos de texto pela web, é usada para fazer o layout de um site, não é possivel aplicar qualquer tipo de logica de programação <br> CSS é uma linguagem feita para estilizar uma página, não é possivel criar uma pagina web somente com CSS <br> java e javascript sim é uma linguagem de uso geral, é possivel aplicar logica de programação.</p>
+        <h3>3. Sobre CSS responda.</h3>
+        <h4>A- Quais são as formas de incluir css em um documento HTML cite as três e explique que impacto isso tem no processamento das regras.</h4>
+        <p>você pode incluir CSS em um documento separado, depois utilizando "link rel="stylesheet" href="arquivoCSS.css"" para implementalo no codigo <br> você também pode implementar CSS no proprio arquivo HTML de duas formas: <br> no "head" do arquivo, com a tag "Style", dentro dela você coloca todas as suas regras CSS que desejar <br> na propria tag, utilizando "Style=""" <br> essas 3 formas tem prioridades diferentes, veja a seguir</p>
+        <p style="color: aqua;">prioridade maior</p>
+        <p style="color: blue;">prioridade normal</p>
+        <p style="color: purple;">prioridade menor</p>
+        <p>veja o exemplo no codigo:</p>
+        <p id="A">Hello world (mesmo que no arquivo .CSS também tem um id com o nome A, o "style" no topo do documento tem prioridade)</p>
+        <p id="A" style="color: aqua;">Hello world (a prioridade maior é do style dentro da tag)</p>
+        <h4>B- Como funcionam seletores CSS explique se necessário com exemplos.</h4>
+        <p>Os diferentes seletores tem diferentes prioridades, podemos explicar isso com espesifidade, o quão espefifico o seletor é? <br>já foi explicado sobre a espeficidade das diferentes formas de implementar CSS no documento HTML, do menos epecifico para o mais epecifico: <br> Documento.CSS separado; <br>"Style" no topo do arquivo; <br>"Style" na tag.</p>
+        <p>Agora para id e classe, classe é mais especifico do que uma regra geral implementada no inicio do documento; <br>Id é mais especifico do que ambos; <br>"Style" na tag e mais espeficido que tudo, pois é unico a apenas aquela tag.</p>
+        <h4>C- Como funcionam o posicionamento de elementos no HTML e CSS, descreva e explique se necessário com exemplos.</h4>
+        <p>O posicionamento pode ser usado de diversas maneiras, podemos utilizar diferentes layouts, para mostrar os elementos de formas diferentes, por exemplo:</p>
+        <div>
+            <p>usando o Inline-block, podemos posisionar elemento onde desejamos.</p>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div>
+            <p>usando o flex, podemos mais facilmente fazer uma lista de elementos</p>
+            <div class="box">
+                <div class="boxFlex">
+                    <div class="boxFlexx">1</div>
+                    <div class="boxFlexx">2</div>
+                    <div class="boxFlexx">2</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>usando o grid, podemos fazer um layou de forma mais eficiente</p>
+            <div class="box">
+                <div class="boxgrid">
+                    <div class="boxgridd" style="grid-area: A;">A</div>
+                    <div class="boxgridd" style="grid-area: B;">B</div>
+                    <div class="boxgridd" style="grid-area: C;">C</div>
+                    <div class="boxgridd" style="grid-area: D;">D</div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>

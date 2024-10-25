@@ -1,0 +1,114 @@
+.Flexb{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Italia{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    height: 40vh;
+    min-width: 400px;
+    flex-grow: 1;
+    transition-duration: 2s;
+    color: white;
+    text-align: center;
+}
+.PaisesB{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    height: 40vh;
+    min-width: 400px;
+    flex-grow: 1;
+    transition-duration: 2s;
+    color: white;
+    text-align: center;
+}
+.Japao{
+    margin: 5px;
+    display: inline-block;
+    border: 1px solid black;
+    height: 40vh;
+    min-width: 400px;
+    flex-grow: 1;
+    transition-duration: 2s;
+    color: red;
+    
+}
+#vermelhoI{
+    background-color: red;
+    flex-grow: 1;
+}
+#whiteI{
+    flex-grow: 1;
+}
+#verdeI{
+    background-color: green;
+    flex-grow: 1;
+}
+#vermelhoP{
+    background-color: red;
+    flex-grow: 1;
+}
+#whiteP{
+    flex-grow: 1;
+}
+#azulP{
+    flex-grow: 1;
+    background-color: blue;
+}
+#ballJ{
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    height: 50%; 
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    background-color: red;
+    border-radius: 100%;
+    text-align: center;
+}
+.Italia:hover{
+    flex-grow: 5;
+    height: 70vh;
+    color: black;
+}
+.Japao:hover{
+    flex-grow: 5;
+    height: 70vh;
+    color: black;
+}
+.PaisesB:hover{
+    flex-grow: 5;
+    height: 70vh;
+    color: black;
+}
+@media (max-width:1300px){
+    .Flexb{
+        flex-direction: column;
+    }
+    .Italia:hover{
+        flex-grow: 5;
+        min-width: 120vh;
+        color: black;
+    }
+    .Japao:hover{
+        flex-grow: 5;
+        min-width: 120vh;
+        color: black;
+    }
+    .PaisesB:hover{
+        flex-grow: 5;
+        min-width: 120vh;
+        color: black;
+    }
+}

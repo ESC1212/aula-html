@@ -1,0 +1,44 @@
+#id{
+    color: purple;
+}
+.box{
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 200px; 
+    background-color: rgb(97, 97, 97);
+}
+.boxFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px; 
+    background-color: rgb(185, 185, 185); 
+}
+.boxFlexx{
+    flex-grow: 1;
+    background-color: rgb(97, 97, 97);
+    margin: 1px;
+    width: 190px;;
+    color: white;
+}
+.boxgrid{
+    display: grid;
+    height: 200px;
+    grid-template-areas: 
+        "A A . B" 
+        "C D D D"
+        "C D D D"
+        "C D D D" 
+    ;
+}
+.boxgridd{
+    background-color: gray;
+    margin: 10px;
+    border: 1px solid black;
+    font-size: larger;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
