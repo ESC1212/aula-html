@@ -115,6 +115,7 @@ h1{
 }
 .chat:hover{
     height: 600px;
+    opacity: 1;
 }
 @media (max-width:700px){
     .mainbox{
@@ -129,13 +130,7 @@ h1{
         background-size: 100px;
         background-position: 0%;
     }
-    h1{
-        text-align: center;
-    }
-    .Bottom{
-        border: 1px solid black;
-        text-align: center;
-        height: 300px;
-        margin-bottom: 5px;
+    .chat{
+        opacity: 0.2;
     }
 }
