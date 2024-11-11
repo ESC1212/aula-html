@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 3 4</title>
+</head>
+<body>
+    <h1>'</h1>
+    <script>
+        let nome = "Edward";
+        let idade = 17;
+        let bebado = false;
+        let hobbies = ["Anime", "Guitarra","Musica","Jogos"];
+        let profissao = {
+            nomeP: "Musico",
+            horasDia: 5,
+            salarioPShow: 800
+        }
+
+        console.log(`Nome: ${nome} Tipo: ${typeof(nome)}`);
+        console.log(`Idade:: ${idade} Tipo: ${typeof(idade)}`);
+        console.log(`Bebado: ${bebado} Tipo: ${typeof(bebado)}`);
+        console.log(`hobbies: ${hobbies} Tipo: ${typeof(hobbies)}`);
+        console.log(`Nome: ${profissao.nomeP} Tipo: ${typeof(profissao.nomeP)}`);
+        console.log(`horas por dia: ${profissao.horasDia} Tipo: ${typeof(profissao.horasDia)}`);
+        console.log(`Salario por show : ${profissao.salarioPShow} Tipo: ${typeof(profissao.salarioPShow)}`);
+
+        function type(nome){
+            document.querySelector("h1").textContent = `Nome: ${nome} Tipo: ${typeof(nome)}`;
+        }
+    </script>
+</body>
+</html>
