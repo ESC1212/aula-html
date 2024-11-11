@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista 12</title>
+    <style>
+        label{
+            margin: 10px;
+        }
+        input{
+            margin: 10px ;
+        }
+        button{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <label for="t1">Numero 1</label>
+    <input id="t1" type="text" name="1"> <br>
+    <label for="t2">Numero 2</label>
+    <input id="t2" type="text" name="2"><br>
+    <button type="button" onclick="Sum()">Somar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function Sum(){
+            n1 = Number.parseFloat(document.getElementById("t1").value);
+            n2 = Number.parseFloat(document.getElementById("t2").value);
+
+            console.log(n1+n2);
+            alert(n1+n2);
+            document.getElementById("resultado").textContent = n1+n2;
+        }
+    </script>
+</body>
+</html>

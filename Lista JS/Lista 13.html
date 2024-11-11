@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista 14</title>
+    <style>
+        label{
+            margin: 10px;
+        }
+        input{
+            margin: 10px ;
+        }
+        button{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <label for="t1">Texto: </label>
+    <input id="t1" type="text" name="1"> <br>
+    <button type="button" onclick="Copy()">Copiar</button>
+    <div id="paragrafos"></div>
+
+    <script>
+        let inputTxt = document.getElementById("t1");
+        let divResultado = document.getElementById("paragrafos");
+        function Copy(){
+            divResultado.innerHTML+= inputTxt.value+"<br>";
+        }
+    </script>
+</body>
+</html>
