@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 14</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    
+    <button id="but" type="button" onclick="num()">Clicke aqui</button>
+
+    <script>
+        i=0;
+        function  num(){
+            i++;
+            document.getElementById("but").textContent = i;
+            if(i ==10){
+                alert("no input você muda o valor e no buttom você muda o texdo da tag");
+            }
+        }
+    </script>
+</body>
+</html>

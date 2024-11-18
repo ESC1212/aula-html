@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 17</title>
+    <style>
+        .pal{
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+        }
+        div{
+            display: flex;
+            text-align: center;
+        }
+        #box1{
+            display: inline-block;
+            height: 40vh;
+            flex-grow: 1;
+            background-color: aqua;
+        }
+        #box2{
+            display: inline-block;
+            height: 40vh;
+            flex-grow: 1;
+            background-color: lightblue;
+        }
+        #box3{
+            display: inline-block;
+            height: 40vh;
+            flex-grow: 1;
+            background-color: deeppink;
+        }
+        #box4{
+            display: inline-block;
+            height: 40vh;
+            flex-grow: 1;
+            background-color: darkcyan;
+        }
+        #box5{
+            display: inline-block;
+            height: 40vh;
+            flex-grow: 1;
+            background-color: darkgoldenrod;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="pal">
+        <div id="box1">
+            
+        </div>
+        <div id="box2">
+            
+        </div>
+        <div id="box3">
+            
+        </div>
+        <div id="box4">
+            
+        </div>
+        <div id="box5">
+            
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener ('keyup', (e) => {
+            if (e.code === "Space")change()
+            });
+        
+        function change(){
+            let temp = ran();
+            document.getElementById("box1").style.backgroundColor = temp;
+            document.getElementById("box1").innerText = temp;
+            
+            temp = ran();
+            document.getElementById("box2").style.backgroundColor = ran();
+            document.getElementById("box2").innerText = temp;
+            temp = ran();
+            document.getElementById("box3").style.backgroundColor = ran();
+            document.getElementById("box3").innerText = temp;
+            temp = ran();
+            document.getElementById("box4").style.backgroundColor = ran();
+            document.getElementById("box4").innerText = temp;
+            temp = ran();
+            document.getElementById("box5").style.backgroundColor = ran();
+            document.getElementById("box5").innerText = temp;
+        }
+        function ran(){
+            let num1 = (Math.random() * 255).toFixed(1);
+            let num2 = (Math.random() * 255).toFixed(1);
+            let num3 = (Math.random() * 255).toFixed(1);
+            let result = `rgb(${num1}, ${num2}, ${num3})`
+            console.log(result)
+            return result;
+        }
+    </script>
+</body>
+</html>

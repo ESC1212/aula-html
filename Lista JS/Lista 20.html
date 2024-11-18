@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 20</title>
+
+    <style>
+        form{
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>  
+    <form>
+        <h3>Altura</h3>
+        <input type="text" id="altura">
+        <h3>Peso</h3>
+        <input type="text" id="peso"> <br>
+        <button type="button" id="bt" onclick="IMC()">Calcultar</button>
+        <h1>IMC: </h1>
+    </form>
+    
+    <script>
+        function IMC(){
+            let alt = Number.parseFloat(document.getElementById("altura").value);
+            let pes = Number.parseFloat(document.getElementById("peso").value);
+            let res = (pes / (alt*alt)).toFixed(1);
+            document.querySelector("h1").innerText = `IMC: ${res}`;
+        }
+    </script>
+</body>
+</html>

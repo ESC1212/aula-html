@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 21</title>
+
+    <style>
+        div{
+            text-align: center;
+        }
+        .calc{
+            display: grid;
+            grid-template-areas:
+                "r r r r"  
+                "r r r r"
+                "p m x d"
+                "7 8 9 e"
+                "4 5 6 e"
+                "1 2 3 e"
+                "0 t A e"
+            ;
+            min-height: 80vh;
+            margin: 100px;
+            border: 2px solid black;
+        }
+        .res{
+            color: white;
+            font-size: larger;
+            background-color: black;
+        }
+        .op{
+            background-color: lightgray;
+            border: 1px solid gray;
+        }
+        .eq{
+            background-color: orangered;
+            border: 1px solid black;
+        }
+        .num{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="calc">
+        <div class="res" style="grid-area: r;"></div>
+        <div class="op" style="grid-area: p;">+</div>
+        <div class="op" style="grid-area: m;">-</div>
+        <div class="op" style="grid-area: x;">x</div>
+        <div class="op" style="grid-area: d;">/</div>
+        <div class="eq" style="grid-area: e;">=</div>
+        <div class="num" style="grid-area: 7;">7</div>
+        <div class="num" style="grid-area: 8;">8</div>
+        <div class="num" style="grid-area: 9;">9</div>
+        <div class="num" style="grid-area: 4;">4</div>
+        <div class="num" style="grid-area: 5;">5</div>
+        <div class="num" style="grid-area: 6;">6</div>
+        <div class="num" style="grid-area: 1;">1</div>
+        <div class="num" style="grid-area: 2;">2</div>
+        <div class="num" style="grid-area: 3;">3</div>
+        <div class="num" style="grid-area: 0;">0</div>
+        <div class="num" style="grid-area: t;">.</div>
+        <div class="num" style="grid-area: A;">AC</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 15</title>
+    <style>
+        .main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h3>Mínimo</h3>
+        <input type="text" id="tx1">
+        <h3>Máximo</h3>
+        <input type="text" id="tx2"> <br>
+        <button type="button" onclick="ran()">Gerar Número Aleatório</button>
+        <h3 id="res"> Número Aleatório: </h3>
+    </div>
+    <script>
+        function ran(){
+            let num1 = Number.parseFloat(document.getElementById("tx1").value)
+            let num2 = Number.parseFloat(document.getElementById("tx2").value)
+
+            document.getElementById("res").innerHTML = (Math.random() * (num1 - num2) + num2).toFixed(0);
+            
+        }
+    </script>
+</body>
+</html>
