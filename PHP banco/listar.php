@@ -3,36 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>listar</title>
+    <style>
+        
+    </style>
 </head>
 <body>
-    <pre>
-        <?php
-            include_once("db.php");
-            include_once("pessoa_da.php");
+    
+    <?php
+    include_once("db.php");
+    include_once("pessoa_da.php");
 
-            $lista_pessoa= getUsuarios();
-        ?>
-    </pre>
-
+    $listaPessoa = getUsuarios();
+    
+    ?>
     <table>
         <tr>
             <th>ID</th>
             <th>Nome</th>
             <th>Email</th>
         </tr>
-
-    <?php
-        for ($i = 0; $i < count(value: $lista_pessoa); $i++){
-    ?>
-            <tr>
-                <td><?php echo $lista_pessoa[$i]["idusuario"]?></td>
-                <td><?php echo $lista_pessoa[$i]["nome"]?></td>
-                <td><?php echo $lista_pessoa[$i]["email"]?></td>
-            </tr>
         <?php
+        for($i=0; $i <count($listaPessoa); $i++){
+            ?>
+            <tr>
+                <td><a href="edit_pessoa.php/?pessoa_id= <?php echo $listaPessoa[$i]["idusuario"] ?>"><?php echo $listaPessoa[$i]["idusuario"] ?></a></td>
+                <td><?php echo $listaPessoa[$i]["nome"] ?></td>
+                <td><?php echo $listaPessoa[$i]["email"] ?></td>
+            </tr>
+            <?php
         }
         ?>
     </table>
+
 </body>
 </html>
