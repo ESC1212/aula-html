@@ -18,7 +18,7 @@
         $stmt = $db->prepare($sql);
         $stmt->execute();
         $resultado = $stmt->fetchALL(PDO::FETCH_ASSOC);
-        var_dump($resultado);
+        return $resultado;
     }
     getUsuarios();
 ?>

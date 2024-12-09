@@ -11,6 +11,7 @@
         <input type="text" name="nome" id="nome">
         <label for="email">Email </label>
         <input type="email" name="email" id="email">
+        <input type="text" name="cadastrar" value="cadastrar" hidden>
         <input type="submit" value="Adicionar">
     </form>
 </body>

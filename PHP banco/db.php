@@ -15,11 +15,11 @@
 
     function chekConexao($connId){
         if($connId){
-            echo "conectado";
+            
         }else{
             echo "não foi possivel conectar";
         }
     }
     chekConexao(conecta());
-    var_dump(conecta());
+    
 ?>
