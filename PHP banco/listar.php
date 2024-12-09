@@ -5,7 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>listar</title>
     <style>
-        
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid purple;
+            border-collapse: collapse;
+        }
+        th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
     </style>
 </head>
 <body>
