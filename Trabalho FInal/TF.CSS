@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+}
+.login{
+    background-image: url("https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?cs=srgb&dl=pexels-jplenio-1103970.jpg&fm=jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vh;
+
+}
+#login{
+    display: grid;
+    background-color: white;
+    min-height: 40vh;
+    min-width: 50vw;
+    border-radius: 10px;
+    margin: 10px;
+    grid-template-areas: 
+        ".    .    .     .        .     ." 
+        ".    TXT1 Login Login    .     ."
+        ".    TXT2 Senha Senha    .     ."
+        ".    .    .     .        botao ."
+    ;
+}
+input{
+    max-height: 30px;
+}
+#loginButton{
+    margin: 10px;
+    max-height: 30px;
+}
+#TXTLogin{
+    margin: 6px
+}
+#lista{
+    display: grid;
+    background-color: lightgray;
+    min-height: 100vh;
+    min-width: 100vw;
+    grid-template-areas: 
+        "pesq pesq pesq pesq pesq pesq" 
+        "pesq pesq pesq pesq pesq pesq"
+        ".    list list list list .   "
+        ".    list list list list .   "
+        ".    list list list list .   "
+        ".    list list list list .   "
+        ".    .    .     .   botao .  "
+    ;
+}
+#header{
+    background-image: url("https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?cs=srgb&dl=pexels-jplenio-1103970.jpg&fm=jpg");
+    min-width: 100vw;
+    min-height: 30vh;
+}
