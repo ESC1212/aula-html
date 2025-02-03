@@ -35,26 +35,36 @@ input{
     margin: 10px;
     max-height: 30px;
 }
+#CadastrarButton{
+    max-height: 30px;
+}
 #TXTLogin{
     margin: 6px
 }
 #lista{
     display: grid;
-    background-color: lightgray;
+    background-color: rgb(241, 239, 239);
     min-height: 100vh;
     min-width: 100vw;
     grid-template-areas: 
-        "pesq pesq pesq pesq pesq pesq" 
-        "pesq pesq pesq pesq pesq pesq"
-        ".    list list list list .   "
-        ".    list list list list .   "
-        ".    list list list list .   "
-        ".    list list list list .   "
-        ".    .    .     .   botao .  "
+        "pesq pesq pesq pesq pesq pesq pesq pesq" 
+        "pesq pesq pesq pesq pesq pesq pesq pesq"
+        ".    list list list list list list .   "
+        ".    list list list list list list .   "
+        ".    list list list list list list .   "
+        ".    list list list list list list .   "
+        ".    .    .    .    .    .    botao . "
     ;
 }
 #header{
     background-image: url("https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?cs=srgb&dl=pexels-jplenio-1103970.jpg&fm=jpg");
-    min-width: 100vw;
-    min-height: 30vh;
+    display: grid;
+    border: 1px solid black;
+    background-color: lightcyan;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    grid-template-areas: 
+        ".    .    .    .    .    .    .     .   " 
+        ".    bar  bar  bar  bar  bar  botao .   "
+    ;   
 }
