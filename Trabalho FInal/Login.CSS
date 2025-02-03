@@ -2,16 +2,33 @@ body{
     background-image: url("https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?cs=srgb&dl=pexels-jplenio-1103970.jpg&fm=jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vh;
+
 }
-.login{
+#login{
     display: grid;
-    min-height: 30vh;
-    min-width: 50vh;
+    background-color: white;
+    max-height: 150vh;
+    min-width: 80vh;
+    border-radius: 10px;
+    margin: 10px;
     grid-template-areas: 
-        "header header header header" 
-        "nav    cont   cont   cont  "
-        "nav    cont   cont   cont  "
-        "nav    cont   cont   cont  " 
-        "nav    footer footer footer"
+        ".    .    .     .        .     ." 
+        ".    TXT1 Login Login    .     ."
+        ".    TXT2 Senha Senha    .     ."
+        ".    .    .     .        botao ."
+        ".    .    .     .        .     ."
     ;
+}
+input{
+    margin: 10px;
+}
+button{
+    margin: 10px;
 }
