@@ -1,8 +1,8 @@
 <?php 
     include_once("db.php");
     
-    function save($nome,$email){
-        $db = conecta();
+    function insert($nome,$email){
+        $db = Connection();
 
         $sql = "insert into usuario (nome,email) values (?,?)";
 
@@ -13,7 +13,7 @@
     }
 
     function getUsuarios(){
-        $db =conecta();
+        $db =Connection();
         $sql = "select * from usuario";
         $stmt = $db->prepare($sql);
         $stmt->execute();
@@ -21,7 +21,7 @@
         return $resultado;
     }
     function getUsuario($id){
-        $db =conecta();
+        $db =Connection();
         $sql = "select * from usuario where idusuario = ?";
         $stmt = $db->prepare($sql);
         $stmt->bindValue(1,$id);

@@ -6,7 +6,7 @@
         if(isset($_POST["nome"]) && isset($_POST["email"])){
             $nome = $_POST["nome"];
             $email = $_POST["email"];
-            save($nome,$email);
+            insert($nome,$email);
             header("Location: listar.php");
         }else{
             echo "Não deu certo";

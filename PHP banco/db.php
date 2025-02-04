@@ -1,5 +1,5 @@
 <?php 
-    function conecta(){
+    function Connection(){
         $user="root";
         $senha="aluno";
         $database="romulo";
@@ -13,13 +13,13 @@
         }
     }
 
-    function chekConexao($connId){
+    function CheckC($connId){
         if($connId){
             
         }else{
             echo "não foi possivel conectar";
         }
     }
-    chekConexao(conecta());
+    CheckC(Connection());
     
 ?>
