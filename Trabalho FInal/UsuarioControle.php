@@ -5,8 +5,7 @@
         header("location:login.php");
     }
     if(isset($_REQUEST['id'])){
-        $id = $_REQUEST['id'];
-        delete($id);
-        header("location:usuarios.php");
+        delete($_REQUEST['id']);
+        header("location:lista.php");
     }
 ?>

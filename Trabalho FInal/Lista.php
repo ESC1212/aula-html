@@ -20,12 +20,12 @@
     <link rel="stylesheet" href="TF.CSS">
 </head>
 <body id="lista">
-    <div id="header" style="grid-area: pesq;">
-        <input type="text" style="grid-area: bar;">
-        <button id="pesqui" style="grid-area: botao;">Pesquisar</button>
-    </div>
-    <div id="list" style="grid-area: list;"></div>
-        <fieldset>
+    <form id="header" style="grid-area: pesq;" action="lista.php" method="get">
+        <input type="text" name="pesquisa" style="grid-area: bar;">
+        <input type="submit" value="Pesquisar" id="pesqui" style="grid-area: botao;">
+    </form>
+    <div id="list" style="grid-area: list;">
+    <fieldset>
                 <table>
                     <tr>
                         <th>ID</th>
@@ -38,19 +38,15 @@
                         for($i=0;$i<count($usuarios);$i++){
                     ?>
                             <tr>
-                                <td class="borda"><?php echo $usuarios[$i]['idusuario'];?></td>
-                                <td class="borda"><?php echo $usuarios[$i]['nome'];?></td>
-                                <td class="borda"><?php echo $usuarios[$i]['dataNasc'];?></td>
-                                <td class="borda"><?php echo $usuarios[$i]['email'];?></td>
-                                <td class="borda"><?php echo $usuarios[$i]['telefone'];?></td>
-                                <td><form action="cadastroEdicao.php" method="post">
+                                <td ><?php echo $usuarios[$i]['idusuario'];?></td>
+                                <td ><?php echo $usuarios[$i]['nome'];?></td>
+                                <td ><?php echo $usuarios[$i]['dataNasc'];?></td>
+                                <td ><?php echo $usuarios[$i]['email'];?></td>
+                                <td ><?php echo $usuarios[$i]['telefone'];?></td>
+                                <td><form action="Editar.php" method="post">
                                     <input type="text" name="tipo" value="Editar" hidden>
                                     <input type="number" name="id" value="<?php echo $usuarios[$i]['idusuario'];?>" hidden>
                                     <input type="submit" value="Editar">
-                                </form></td>
-                                <td><form action="usuariosControle.php" method="post">
-                                    <input type="number" name="id" value="<?php echo $usuarios[$i]['idusuario'];?>" hidden>
-                                    <input type="submit" value="Excluir" id="btExcluir">
                                 </form></td>
                             </tr>
                     <?php
@@ -58,7 +54,11 @@
                     ?>
                 </table>
             </fieldset>
-    <button id="CadastrarButton" style="grid-area: boto;">Cadastrar</button>
-    <button id="CadastrarButton" style="grid-area: logout;">Sair</button>
+    </div>
+    <form action="Editar.php" method="post" style="grid-area: boto;">
+                 <input type="text" name="tipo" value="Cadastrar" hidden>
+                 <input type="submit" id="CadastrarButton" value="Cadastrar">
+            </form>
+    <a href="logout.php" style="grid-area: logout;"><button id="CadastrarButton">Sair</button></a>
 </body>
 </html>

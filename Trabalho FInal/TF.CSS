@@ -1,6 +1,18 @@
 *{
     margin: 0px;
 }
+#botoes{
+    display: flex;
+    flex-direction: row;
+}
+table, tr, td{
+    border-collapse: collapse;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+table{
+    min-width: 70vw;
+}
 .login{
     background-image: url("https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?cs=srgb&dl=pexels-jplenio-1103970.jpg&fm=jpg");
     background-repeat: no-repeat;
@@ -37,6 +49,22 @@
 #CadastrarButton{
     margin-top: 10px;
     max-height: 30px;
+}
+#Cancelar{
+    margin-top: 10px;
+    min-height: 30px;
+    justify-content: center;
+    min-width: 100%;
+}
+#exluir{
+    display: inline-block;
+    margin-top: 10px;
+    min-height: 30px;
+    min-width: 100%;
+    align-self: flex-end;
+}
+#exluiri{
+    display: none;
 }
 #TXTLogin{
     margin: 6px
@@ -80,13 +108,16 @@
     min-width: 100vw;
     grid-template-areas:  
         "pesq pesq pesq pesq pesq pesq pesq pesq"
-        ".    list list list list list list .   "
-        ".    list list list list list list .   "
-        ".    list list list list list list .   "
-        ".    list list list list list list .   "
-        ".    list list list list list list .   "
-        ".    list list list list list list .   "
-        ".    Canc .    excl excl .    boto .   "
+        ". .    .    .    .    .    excluir ."
+        ". list list list list list list .   "
+        ". list list list list list list .   "
+        ". list list list list list list .   "
+        ". list list list list list list .   "
+        ". list list list list list list .   "
+        ". list list list list list list .   "
+        ". list list list list list list .   "
+        ". list list list list list list .   "
+        ". .    .    .    .    .    .    ."
     ;
 }
 #list{
@@ -136,6 +167,7 @@
     "Email EmailF . ."
     "Tele TeleF . ."
     ". . . ."
+    "botoes botoes botoes botoes"
     ;
 }
 #txtC{

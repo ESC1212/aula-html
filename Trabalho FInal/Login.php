@@ -7,7 +7,7 @@
     }
     if(isset($_REQUEST['login'])){
         if($_REQUEST['login'] == 0){
-            echo "<p> Usuario ou senha Inválidos</p>";
+            echo "<h3>Usuario ou senha Inválidos</h3>";
         }
     }
     ?>

@@ -30,7 +30,10 @@
         $stmt->bindValue(2,$dataNasc);
         $stmt->bindValue(3,$telefone);
         $stmt->bindValue(4,$email);
-        $stmt->execute();
+        try{
+            $stmt->execute();
+        }catch(PDOException $e){
+        }
     }
 
     function update($nome,$dataNasc,$telefone,$email,$id){
@@ -44,7 +47,10 @@
         $stmt->bindValue(3,$telefone);
         $stmt->bindValue(4,$email);
         $stmt->bindValue(5,$id);
-        $stmt->execute();
+        try{
+            $stmt->execute();
+        }catch(PDOException $e){
+        }
     }
 
     function delete($id){
