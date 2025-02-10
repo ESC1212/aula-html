@@ -4,10 +4,13 @@
         if($_SESSION['logado'] == false){
             header("location:Login.php");
         }
+        //ve se 'pesquisa' existe
         if(isset($_REQUEST['pesquisa'])){
+            //se existir, ele realiza a pesquisa
             $pesquisa = $_REQUEST['pesquisa'];
             $usuarios = getUsuario($pesquisa);
         }else{
+            //caso não, ele só pega tudo
             $usuarios = getUsuarios();
         }
     ?>
@@ -44,6 +47,8 @@
                                 <td ><?php echo $usuarios[$i]['email'];?></td>
                                 <td ><?php echo $usuarios[$i]['telefone'];?></td>
                                 <td><form action="Editar.php" method="post">
+                                    <!-- manda o tipo da edição e o id para a tela de edição/cadastro -->
+                                    <!-- o tipo muda para a tela de edição -->
                                     <input type="text" name="tipo" value="Editar" hidden>
                                     <input type="number" name="id" value="<?php echo $usuarios[$i]['idusuario'];?>" hidden>
                                     <input type="submit" value="Editar">
@@ -56,6 +61,7 @@
             </fieldset>
     </div>
     <form action="Editar.php" method="post" style="grid-area: boto;">
+                 <!-- muda o tipo da tela para Cadastro -->
                  <input type="text" name="tipo" value="Cadastrar" hidden>
                  <input type="submit" id="CadastrarButton" value="Cadastrar">
             </form>
