@@ -4,6 +4,8 @@
     if($_SESSION['logado'] == false){
         header("location:login.php");
     }
+
+    //Cadastrar
     if(isset($_REQUEST['tipo'])){
         if($_REQUEST['tipo'] == "Cadastrar"){
             $nome= $_REQUEST['nome'];
@@ -12,6 +14,8 @@
             $telefone= $_REQUEST['telefone'];
             insert($nome,$dataNasc,$telefone,$email);
             header("location:lista.php");
+
+    //Editar
         }else if($_REQUEST['tipo'] == "Editar"){
             $id= $_REQUEST['id'];
             $nome= $_REQUEST['nome'];

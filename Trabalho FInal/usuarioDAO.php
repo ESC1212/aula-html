@@ -1,7 +1,7 @@
 <?php 
     function Connection(){
         $user="root";
-        $senha="dick";
+        $senha="aluno";
         $database="DB";
         $host="localhost";
         
@@ -21,6 +21,7 @@
         }
     }
 
+    //cadastro
     function insert($nome,$dataNasc,$telefone,$email){
         $db = Connection();
         $sql = "INSERT INTO usuario (nome,dataNasc,telefone,email) VALUES (?,?,?,?)";
@@ -36,6 +37,7 @@
         }
     }
 
+    //edição
     function update($nome,$dataNasc,$telefone,$email,$id){
         $db = Connection();
 
@@ -53,6 +55,7 @@
         }
     }
 
+    //para deletar o usuário com o id
     function delete($id){
         $db = Connection();
 
@@ -62,6 +65,7 @@
         $stmt->execute();
     }
 
+    //para preencher a lista
     function getUsuarios(){
         $db =Connection();
         $sql = "select * from usuario";
@@ -71,6 +75,7 @@
         return $resultado;
     }
 
+    //para fazer pesquisa usando o nome
     function getUsuario($nome){
         $db =Connection();
         $sql = "select * from usuario where nome like '$nome%' ";
@@ -81,6 +86,7 @@
         return $resultado;
     }
 
+    //para edição
     function getUsuariobyid($id){
         $db =Connection();
         $sql = "select * from usuario where idusuario = ?";
